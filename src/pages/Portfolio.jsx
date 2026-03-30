@@ -17,10 +17,10 @@ export default function Portfolio() {
           </div>
           <div className="row">
             {portfolioImages.map((img, i) => (
-              <div key={i} className="col-md-4 my-2">
-                <div className="box" style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', overflow: 'hidden' }}>
+              <div key={i} className="col-md-4 col-sm-6 mb-4">
+                <div className="box">
                   <div className="img-box">
-                    <img src={`/images/${img}`} alt={`portfolio-${i + 1}`} style={{ width: '100%' }} />
+                    <img src={`/images/${img}`} alt={`portfolio-${i + 1}`} />
                   </div>
                 </div>
               </div>

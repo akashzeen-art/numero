@@ -146,10 +146,13 @@ a:hover, a:focus { color: initial; }
 /* Case / Portfolio */
 .case_section .heading_container { align-items: center; }
 .case_section .box {
-  margin-top: 45px; background-color: #ffffff;
+  background-color: #ffffff;
   box-shadow: 0 0 10px 0 rgba(0,0,0,0.15); text-align: center;
+  overflow: hidden; border-radius: 8px;
 }
-.case_section .box .img-box img { width: 100%; }
+.case_section .box .img-box img {
+  width: 100%; height: 220px; object-fit: cover; display: block;
+}
 
 /* Footer container */
 .footer_container {

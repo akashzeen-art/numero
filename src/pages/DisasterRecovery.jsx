@@ -87,7 +87,7 @@ export default function DisasterRecovery() {
             <a href="#outcomes" onClick={e => scrollTo(e, '#outcomes')} style={{ color: '#6b21a8', textDecoration: 'none' }}>Business Outcomes</a>
           </div>
           <button onClick={() => window.open('https://calendly.com/itstusharpandey/30min', '_self')} style={{ background: '#9333ea', color: '#fff', padding: '8px 20px', borderRadius: 9999, fontSize: 14, fontWeight: 600, border: 'none', cursor: 'pointer', boxShadow: '0 10px 15px -3px rgba(168,85,247,0.3)' }}>
-            Audit Your Resilience
+            Book a Meeting
           </button>
         </div>
       </nav>
@@ -106,7 +106,7 @@ export default function DisasterRecovery() {
               In an era of geopolitical instability and regional blackouts, traditional disaster recovery is too slow. Position your enterprise for survival with speedy, immutable, and automated DRaaS.
             </p>
             <a href="#strategy" onClick={e => scrollTo(e, '#strategy')} style={{ display: 'inline-flex', alignItems: 'center', gap: 8, background: '#1e1b4b', color: '#fff', padding: '16px 32px', borderRadius: 16, fontWeight: 700, textDecoration: 'none' }}>
-              Deploy Resilience with us <i data-lucide="arrow-right" style={{ width: 20, height: 20 }} />
+              Explore more <i data-lucide="arrow-right" style={{ width: 20, height: 20 }} />
             </a>
           </div>
           <div style={{ position: 'relative' }}>
@@ -226,7 +226,7 @@ export default function DisasterRecovery() {
               <p style={{ color: 'rgba(224,231,255,0.7)', margin: 0 }}>Our experts provide a 24/7 managed DRaaS response team that takes the burden off your IT staff during a crisis.</p>
             </div>
             <button onClick={() => window.open('https://calendly.com/itstusharpandey/30min', '_self')} style={{ background: '#fff', color: '#1e1b4b', padding: '20px 40px', borderRadius: 16, fontWeight: 700, border: 'none', cursor: 'pointer', whiteSpace: 'nowrap', boxShadow: '0 20px 25px -5px rgba(0,0,0,0.1)' }}>
-              Get a Free Risk Assessment
+              Book a Meeting
             </button>
           </div>
         </div>
