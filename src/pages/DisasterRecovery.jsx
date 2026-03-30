@@ -1,7 +1,23 @@
 import { useEffect } from 'react'
+import { v4 as uuidv4 } from 'uuid'
+
+const API_BASE = import.meta.env.VITE_API_BASE || 'http://localhost:8080'
 
 export default function DisasterRecovery() {
   useEffect(() => {
+    const params = new URLSearchParams(window.location.search)
+    let clickId = params.get('clickid')
+    if (!clickId) {
+      clickId = uuidv4()
+      params.set('clickid', clickId)
+      window.history.replaceState({}, '', `${window.location.pathname}?${params.toString()}`)
+    }
+    fetch(`${API_BASE}/api/track-click`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ clickId, page: 'disaster-recovery-services', userAgent: navigator.userAgent }),
+    }).catch(() => {})
+
     // Load Lucide
     if (!window.lucide) {
       const script = document.createElement('script')
