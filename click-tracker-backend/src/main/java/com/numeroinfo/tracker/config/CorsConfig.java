@@ -15,8 +15,9 @@ public class CorsConfig {
             public void addCorsMappings(CorsRegistry registry) {
                 registry.addMapping("/api/**")
                         .allowedOrigins(
-                            "http://localhost:5173",  // main site dev
-                            "http://localhost:5174",  // dashboard dev
+                            "http://localhost:5173",
+                            "http://localhost:5174",
+                            "http://localhost:5175",
                             "https://numeroinfo.asia"
                         )
                         .allowedMethods("GET", "POST", "OPTIONS")

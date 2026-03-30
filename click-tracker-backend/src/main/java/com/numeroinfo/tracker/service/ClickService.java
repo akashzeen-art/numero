@@ -2,34 +2,39 @@ package com.numeroinfo.tracker.service;
 
 import com.numeroinfo.tracker.model.Click;
 import com.numeroinfo.tracker.repository.ClickRepository;
-import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
 import java.time.LocalDate;
 import java.time.LocalDateTime;
+import java.time.ZoneId;
 import java.util.*;
 
 @Service
-@RequiredArgsConstructor
 public class ClickService {
 
     private final ClickRepository repo;
 
+    public ClickService(ClickRepository repo) {
+        this.repo = repo;
+    }
+
+    private static final ZoneId IST = ZoneId.of("Asia/Kolkata");
+
     public boolean track(String clickId, String page, String userAgent, String ipAddress) {
-        if (repo.existsByClickId(clickId)) return false; // duplicate — ignore
+        if (repo.existsByClickId(clickId)) return false;
 
         Click click = new Click();
         click.setClickId(clickId);
         click.setPage(page);
         click.setUserAgent(userAgent);
         click.setIpAddress(ipAddress);
-        click.setTimestamp(LocalDateTime.now());
+        click.setTimestamp(LocalDateTime.now(IST));
         repo.save(click);
         return true;
     }
 
     public List<Map<String, Object>> getHourlyStats() {
-        LocalDateTime start = LocalDate.now().atStartOfDay();
+        LocalDateTime start = LocalDate.now(IST).atStartOfDay();
         LocalDateTime end = start.plusDays(1);
 
         List<Object[]> rows = repo.countByHour(start, end);
