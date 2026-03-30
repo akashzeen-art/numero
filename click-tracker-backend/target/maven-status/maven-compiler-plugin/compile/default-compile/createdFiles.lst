@@ -1,7 +1,0 @@
-com/numeroinfo/tracker/service/ClickService.class
-com/numeroinfo/tracker/config/CorsConfig.class
-com/numeroinfo/tracker/ClickTrackerApplication.class
-com/numeroinfo/tracker/repository/ClickRepository.class
-com/numeroinfo/tracker/config/CorsConfig$1.class
-com/numeroinfo/tracker/controller/ClickController.class
-com/numeroinfo/tracker/model/Click.class
