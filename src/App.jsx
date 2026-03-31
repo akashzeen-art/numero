@@ -5,6 +5,7 @@ import Services from './pages/Services'
 import Contact from './pages/Contact'
 import Portfolio from './pages/Portfolio'
 import DisasterRecovery from './pages/DisasterRecovery'
+import Dashboard from './pages/Dashboard'
 
 export default function App() {
   return (
@@ -15,6 +16,7 @@ export default function App() {
       <Route path="/contact" element={<Contact />} />
       <Route path="/portfolio" element={<Portfolio />} />
       <Route path="/disaster-recovery-services" element={<DisasterRecovery />} />
+      <Route path="/dashboard" element={<Dashboard />} />
     </Routes>
   )
 }
