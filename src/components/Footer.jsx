@@ -38,7 +38,7 @@ export default function Footer() {
                   </a>
                   <a href="tel:+917011370445">
                     <i className="fa fa-phone" aria-hidden="true"></i>
-                    <span>Phone : +91 70113 70445</span>
+                    <span>Phone : +91 89298 36907</span>
                   </a>
                   <a href="mailto:info@numeroinfo.asia">
                     <i className="fa fa-envelope" aria-hidden="true"></i>
