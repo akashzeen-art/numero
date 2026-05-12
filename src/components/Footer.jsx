@@ -36,7 +36,7 @@ export default function Footer() {
                     <i className="fa fa-map-marker" aria-hidden="true"></i>
                     <span>B 123 First Floor Sector 54 Gurgaon Haryana 122003</span>
                   </a>
-                  <a href="tel:+917011370445">
+                  <a href="tel:+918929836907">
                     <i className="fa fa-phone" aria-hidden="true"></i>
                     <span>Phone : +91 89298 36907</span>
                   </a>

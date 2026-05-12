@@ -16,7 +16,7 @@ export default function Contact() {
                 <div className="heading_container">
                   <h2>Contact Us</h2>
                 </div>
-                <p>Phone : +91 9667687077</p>
+                <p>Phone : +91 8929836907</p>
                 <p>Website : https://numeroinfo.asia/about-us/</p>
                 <p>Email : info@numeroinfo.asia</p>
                 <p>Address : B 123 First Floor Sector 54 Gurgaon Haryana 122003</p>
